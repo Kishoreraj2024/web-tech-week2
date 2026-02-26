@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Record - Animation</title>
+
+    <style>
+
+        /* ===== BODY ===== */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg,#1e3c72,#2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* ===== CARD ===== */
+        .card {
+            width: 450px;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+            animation: slideIn 1.5s ease-out;
+        }
+
+        /* ===== TITLE ===== */
+        h2 {
+            text-align: center;
+            color: darkblue;
+            animation: glowText 2s infinite alternate;
+        }
+
+        /* ===== TABLE ===== */
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .label {
+            font-weight: bold;
+            background: #e0e0ff;
+            width: 40%;
+        }
+
+        /* ===== KEYFRAME ANIMATION ===== */
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-80px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes glowText {
+            from {
+                color: darkblue;
+                text-shadow: 0 0 5px skyblue;
+            }
+            to {
+                color: red;
+                text-shadow: 0 0 15px orange;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>Student Record</h2>
+
+        <table>
+            <tr>
+                <td class="label">Student Name</td>
+                <td>Kishore Raj AS</td>
+            </tr>
+            <tr>
+                <td class="label">Roll Number</td>
+                <td>AI&DS127</td>
+            </tr>
+            <tr>
+                <td class="label">Course</td>
+                <td>B.Tech AI&DS</td>
+            </tr>
+            <tr>
+                <td class="label">Semester</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td class="label">Email</td>
+                <td>kishoreraj@gmail.com</td>
+            </tr>
+            <tr>
+                <td class="label">Phone</td>
+                <td>9876543440</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

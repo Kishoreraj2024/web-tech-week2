@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.7);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.card {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #2a5298;
+    color: white;
+    border-radius: 5px;
+}
