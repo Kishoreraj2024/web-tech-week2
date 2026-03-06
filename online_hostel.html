@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Online Hostel Management - Student Record</title>
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background-image:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.card{
+width:480px;
+padding:25px;
+background:rgba(255,255,255,0.95);
+border-radius:15px;
+box-shadow:0px 12px 30px rgba(0,0,0,0.5);
+animation:slideIn 1.2s ease-out;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.03);
+}
+
+h2{
+text-align:center;
+color:#0a2a66;
+animation:glowText 2s infinite alternate;
+}
+
+table{
+width:100%;
+margin-top:20px;
+border-collapse:collapse;
+}
+td{
+padding:12px;
+border-bottom:1px solid #ddd;
+}
+
+.label{
+font-weight:bold;
+background:#e8eeff;
+width:40%;
+}
+
+tr:hover{
+background:#f5f7ff;
+}
+
+@keyframes slideIn{
+from{
+transform:translateY(-80px);
+opacity:0;
+}
+to{
+transform:translateY(0);
+opacity:1;
+}
+}
+
+@keyframes glowText{
+from{
+color:#0a2a66;
+text-shadow:0 0 5px skyblue;
+}
+to{
+color:#ff4b2b;
+text-shadow:0 0 15px orange;
+}
+}
+</style>
+</head>
+<body>
+<div class="card">
+<h2>🏠 Hostel Student Record</h2>
+<table>
+<tr>
+<td class="label">Student Name</td>
+<td>Kishore Raj</td>
+</tr>
+<tr>
+<td class="label">Register Number</td>
+<td>2116241801127</td>
+</tr>
+<tr>
+<td class="label">Course</td>
+<td>B.Sc Computer Science</td>
+</tr>
+<tr>
+<td class="label">Hostel Block</td>
+<td>Block A</td>
+</tr>
+<tr>
+<td class="label">Room Number</td>
+<td>205</td>
+</tr>
+<tr>
+<td class="label">Email</td>
+<td>kishore@gmail.com</td>
+</tr>
+<tr>
+<td class="label">Phone</td>
+<td>9876543210</td>
+</tr>
+<tr>
+<td class="label">Warden Name</td>
+<td>Mr. Rajesh</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
